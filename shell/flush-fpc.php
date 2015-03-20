@@ -52,7 +52,6 @@ class Eschrade_Shell_FlushFpc extends Mage_Shell_Abstract
             $tags = $product->getCacheIdTags();
         }
         $cache = Enterprise_PageCache_Model_Cache::getCacheInstance();
-        var_dump($tags);
         $cache->clean($tags);
     }
     
